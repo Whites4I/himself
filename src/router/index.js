@@ -1,14 +1,14 @@
-import Home from "../pages/Home";
-import Contact from "../pages/Contact";
-import Error from "../pages/Error";
-import About from "../pages/About";
-import Login from "../pages/Login";
+import Home from "../pages/private/Home";
+import Contact from "../pages/private/Contact";
+import Error from "../pages/private/Error";
+import About from "../pages/private/About";
+import Login from "../pages/public/Login";
 
 export const privateRoutes = [
   { path: "/about", element: <About /> },
   { path: "", element: <Home /> },
   { path: "/contact", element: <Contact /> },
-  { path: "/*", element: <Error /> },
+  { path: "*", element: <Error /> },
 ];
 
-export const publicRoutes = [{ path: "/login", element: <Login /> }];
+export const publicRoutes = [{ path: "*", element: <Login /> }];

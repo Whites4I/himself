@@ -1,13 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Space Mono", monospace;
-}
-
-.error {
-  position: absolute;
+  font-family: "Roboto", sans-serif;
 }
 
 .error h1 {
