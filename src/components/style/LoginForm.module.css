@@ -2,13 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100hv;
+  height: 100vh;
+  border: 2px red solid;
 }
 
 form {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 400px;
   padding: 20px;
   border: 2px solid rgb(26, 24, 24);
+  border-radius: 10px;
 }

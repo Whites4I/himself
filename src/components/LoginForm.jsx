@@ -5,12 +5,14 @@ import "./style/LoginForm.module.css";
 
 const LoginForm = () => {
   return (
-    <div className='container'>
-      <form>
-        <Input placeholder='Email@example.com'></Input>
-        <Input placeholder='Password'></Input>
-        <Button>Login</Button>
-      </form>
+    <div>
+      <div className='container'>
+        <form>
+          <Input placeholder='Email@example.com'></Input>
+          <Input placeholder='Password'></Input>
+          <Button>Login</Button>
+        </form>
+      </div>
     </div>
   );
 };
