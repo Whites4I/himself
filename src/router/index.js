@@ -3,6 +3,7 @@ import Contact from "../pages/private/Contact";
 import Error from "../pages/private/Error";
 import About from "../pages/private/About";
 import Login from "../pages/public/Login";
+import Signup from "../pages/public/Signup";
 
 export const privateRoutes = [
   { path: "/about", element: <About /> },
@@ -11,4 +12,7 @@ export const privateRoutes = [
   { path: "*", element: <Error /> },
 ];
 
-export const publicRoutes = [{ path: "*", element: <Login /> }];
+export const publicRoutes = [
+  { path: "*", element: <Login /> },
+  { path: "/signup", element: <Signup /> },
+];

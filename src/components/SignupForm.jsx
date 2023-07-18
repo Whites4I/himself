@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./UI/input/Input";
 import Button from "./UI/button/Button";
-import cl from "./style/LoginForm.module.css";
+import cl from "./style/SignupForm.module.css";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
@@ -9,16 +9,16 @@ const LoginForm = () => {
     <div className={cl.login}>
       <form>
         <div className={cl.hello}>
-          <h1>Log in</h1>
+          <h1>Sign up</h1>
         </div>
         <Input placeholder='Email@example.com'></Input>
         <Input placeholder='Password'></Input>
-        <Button>Log in</Button>
+        <Button>Sign up</Button>
         <p>
-          Don't have an account?{" "}
+          Already registered?{" "}
           {
-            <Link className={cl.link} to='signup'>
-              Sign up
+            <Link className={cl.link} to='login'>
+              Log in
             </Link>
           }
         </p>
