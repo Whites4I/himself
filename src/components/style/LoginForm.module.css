@@ -1,12 +1,8 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  border: 2px red solid;
-}
-
 form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -14,4 +10,5 @@ form {
   padding: 20px;
   border: 2px solid rgb(26, 24, 24);
   border-radius: 10px;
+  min-width: 220px;
 }
