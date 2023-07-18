@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100hv;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  padding: 20px;
+  border: 2px solid rgb(26, 24, 24);
+}

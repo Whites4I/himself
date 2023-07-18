@@ -1,4 +1,5 @@
 import React from "react";
+import "./Button.module.css";
 
 const Button = ({ children, ...props }) => {
   return <button {...props}>{children}</button>;
