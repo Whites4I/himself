@@ -16,11 +16,9 @@ const LoginForm = () => {
         <Button>Sign up</Button>
         <p>
           Already registered?{" "}
-          {
-            <Link className={cl.link} to='login'>
-              Log in
-            </Link>
-          }
+          <Link className={cl.link} to='/login'>
+            Log in
+          </Link>
         </p>
       </form>
     </div>

@@ -16,11 +16,9 @@ const LoginForm = () => {
         <Button>Log in</Button>
         <p>
           Don't have an account?{" "}
-          {
-            <Link className={cl.link} to='signup'>
-              Sign up
-            </Link>
-          }
+          <Link className={cl.link} to='/signup'>
+            Sign up
+          </Link>
         </p>
       </form>
     </div>
