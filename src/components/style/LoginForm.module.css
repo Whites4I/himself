@@ -32,3 +32,13 @@ form {
 .link:hover {
   color: black;
 }
+
+.forgotDiv {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.forgotPassword {
+  position: absolute;
+  right: 0;
+}

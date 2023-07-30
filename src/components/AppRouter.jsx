@@ -3,9 +3,10 @@ import { BrowserRouter } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 import Navbar from "./UI/navbar/Navbar";
+import { useSelector } from "react-redux";
 
 const AppRouter = () => {
-  const isAuth = false;
+  const isAuth = useSelector((state) => state.auth.value);
   return isAuth ? (
     <BrowserRouter>
       <Navbar />
