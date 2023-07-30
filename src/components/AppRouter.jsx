@@ -5,7 +5,7 @@ import PublicRoute from "./PublicRoute";
 import Navbar from "./UI/navbar/Navbar";
 
 const AppRouter = () => {
-  const isAuth = false;
+  const isAuth = true;
   return isAuth ? (
     <BrowserRouter>
       <Navbar />
