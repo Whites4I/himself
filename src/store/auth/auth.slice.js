@@ -9,9 +9,7 @@ export const authSlice = createSlice({
   initialState,
   reducers: {
     toggleAuth: (state, { payload: isAuth }) => {
-      console.log(state.value);
-      isAuth ? (state.value = false) : (state.value = true);
-      console.log(state.value);
+      state.value = isAuth;
     },
   },
 });

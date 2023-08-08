@@ -29,7 +29,8 @@ const LoginForm = () => {
         <Button
           onClick={(e) => {
             e.preventDefault();
-            dispatch(actions.toggleAuth(isAuth));
+            localStorage.setItem("auth", "true");
+            dispatch(actions.toggleAuth(true));
           }}
         >
           Log in
