@@ -1,19 +1,17 @@
 import React from "react";
-import Input from "./UI/input/Input";
-import Button from "./UI/button/Button";
-import cl from "./style/LoginForm.module.css";
+import Input from "../input/Input";
+import Button from "../button/Button";
+import cl from "./LoginForm.module.css";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { actions } from "../store/auth/auth.slice";
+import { useDispatch } from "react-redux";
+import { actions } from "../../../store/auth/auth.slice";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
-  const isAuth = useSelector((state) => state.auth.value);
-  console.log(isAuth);
 
   return (
     <div className={cl.login}>
-      <form>
+      <form className={cl.myForm}>
         <div className={cl.hello}>
           <h1>Log in</h1>
         </div>

@@ -6,7 +6,7 @@
   background-color: rgba(235, 235, 235, 0.5);
 }
 
-form {
+.myForm {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -20,6 +20,7 @@ form {
 }
 
 .hello {
+  align-self: center;
   margin-bottom: 10px;
 }
 
@@ -30,4 +31,14 @@ form {
 
 .link:hover {
   color: black;
+}
+
+.forgotDiv {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.forgotPassword {
+  position: absolute;
+  right: 0;
 }

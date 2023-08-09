@@ -1,13 +1,13 @@
 import React from "react";
-import Input from "./UI/input/Input";
-import Button from "./UI/button/Button";
-import cl from "./style/SignupForm.module.css";
+import Input from "../input/Input";
+import Button from "../button/Button";
+import cl from "./SignupForm.module.css";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   return (
     <div className={cl.login}>
-      <form>
+      <form className={cl.myForm}>
         <div className={cl.hello}>
           <h1>Sign up</h1>
         </div>
