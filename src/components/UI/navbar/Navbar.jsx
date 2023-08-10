@@ -1,14 +1,13 @@
 import React from "react";
-import "./Navbar.module.css";
+import cl from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import Button from "../button/Button";
 import { useDispatch } from "react-redux";
 import { actions } from "../../../store/auth/auth.slice";
 
 const Navbar = () => {
   const dispatch = useDispatch();
   return (
-    <div className='navbar'>
+    <div className={cl.navbar}>
       <nav>
         <ul>
           <li>
@@ -17,24 +16,31 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/posts'>Posts</Link>
+            <Link to='/posts'>
+              <strong>Posts</strong>
+            </Link>
           </li>
           <li>
-            <Link to='/about'>About</Link>
+            <Link to='/about'>
+              <strong>About</strong>
+            </Link>
           </li>
           <li>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/contact'>
+              <strong>Contact</strong>
+            </Link>
           </li>
           <li>
-            <Button
+            <Link
+              className={cl.logout}
               onClick={(e) => {
                 e.preventDefault();
                 dispatch(actions.toggleAuth(false));
                 localStorage.removeItem("auth");
               }}
             >
-              Log out
-            </Button>
+              <strong>Log out</strong>
+            </Link>
           </li>
         </ul>
       </nav>
