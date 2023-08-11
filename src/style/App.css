@@ -12,10 +12,6 @@
   align-items: center;
 }
 
-.app {
-  width: 80%;
-}
-
 .error h1 {
   color: red;
 }
