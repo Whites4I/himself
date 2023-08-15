@@ -1,10 +1,10 @@
 import React from "react";
-import Input from "../input/Input";
-import Button from "../button/Button";
+import Input from "../UI/input/Input";
+import Button from "../UI/button/Button";
 import cl from "./LoginForm.module.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { actions } from "../../../store/auth/auth.slice";
+import { actions } from "../../store/auth/auth.slice";
 
 const LoginForm = () => {
   const dispatch = useDispatch();

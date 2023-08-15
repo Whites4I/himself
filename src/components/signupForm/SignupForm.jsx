@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../input/Input";
-import Button from "../button/Button";
+import Input from "../UI/input/Input";
+import Button from "../UI/button/Button";
 import cl from "./SignupForm.module.css";
 import { Link } from "react-router-dom";
 
