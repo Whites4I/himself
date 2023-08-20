@@ -4,7 +4,11 @@ import PostItem from "../../components/postitem/PostItem";
 const Posts = () => {
   return (
     <div>
-      <PostItem></PostItem>
+      <PostItem
+        name='Aboba'
+        title='sadsadddddddd'
+        description='asdasfdasdfsdfsdfasfafmksdgkdfsgbdk,fgbjagblh'
+      ></PostItem>
     </div>
   );
 };
