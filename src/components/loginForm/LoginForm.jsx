@@ -3,11 +3,10 @@ import Input from "../UI/input/Input";
 import Button from "../UI/button/Button";
 import cl from "./LoginForm.module.css";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { actions } from "../../store/auth/auth.slice";
+import { useActions } from "../../hooks/useActions";
 
 const LoginForm = () => {
-  const dispatch = useDispatch();
+  const { toggleAuth } = useActions();
 
   return (
     <div className={cl.login}>
@@ -28,7 +27,7 @@ const LoginForm = () => {
           onClick={(e) => {
             e.preventDefault();
             localStorage.setItem("auth", "true");
-            dispatch(actions.toggleAuth(true));
+            toggleAuth(true);
           }}
         >
           Log in

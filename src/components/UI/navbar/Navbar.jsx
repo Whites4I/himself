@@ -1,11 +1,10 @@
 import React from "react";
 import cl from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { actions } from "../../../store/auth/auth.slice";
+import { useActions } from "../../../hooks/useActions";
 
 const Navbar = () => {
-  const dispatch = useDispatch();
+  const { toggleAuth } = useActions();
   return (
     <div className={cl.navbar}>
       <nav>
@@ -35,7 +34,7 @@ const Navbar = () => {
               className={cl.logout}
               onClick={(e) => {
                 e.preventDefault();
-                dispatch(actions.toggleAuth(false));
+                toggleAuth(false);
                 localStorage.removeItem("auth");
               }}
             >
