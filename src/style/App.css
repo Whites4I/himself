@@ -12,6 +12,21 @@
   align-items: center;
 }
 
+.myNavbar {
+  display: flex;
+  margin: 10px 0;
+  position: sticky;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
 .error h1 {
   color: red;
 }

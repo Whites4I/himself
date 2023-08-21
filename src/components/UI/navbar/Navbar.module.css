@@ -1,16 +1,12 @@
-.navbar {
-  margin: 10px 0 10px 0;
-  position: sticky;
-}
-
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   list-style-type: none;
   overflow: hidden;
   background-color: #d6d6d6c0;
   border-radius: 10px;
+  align-items: center;
 }
 
 li {

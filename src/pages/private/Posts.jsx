@@ -3,7 +3,7 @@ import PostItem from "../../components/postitem/PostItem";
 
 const Posts = () => {
   return (
-    <div>
+    <div className='container'>
       <PostItem
         name='Aboba'
         title='sadsadddddddd'

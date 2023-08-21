@@ -6,7 +6,7 @@ import { useActions } from "../../../hooks/useActions";
 const Navbar = () => {
   const { toggleAuth } = useActions();
   return (
-    <div className={cl.navbar}>
+    <div className='myNavbar'>
       <nav>
         <ul>
           <li>
